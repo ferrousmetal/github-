@@ -120,7 +120,7 @@ class Atm:
                 print("余额不足无法转账")
                 return False
             d=object1.card.yu-b
-            e=card2.card.yu+b
+            self.user_list[a].card.yu+b#转账卡号余额增加
             print("转账成功,转账%d当前余额为%d"%(b,d))
 
     def gaimi(self):
@@ -138,7 +138,8 @@ class Atm:
             if b!=c:
                 print("两次输入新密码不一致")
                 return False
-
+            object1.card.password=c
+            print("密码修改成功")
 
     def suoding(self):
         object1 = self.public()
