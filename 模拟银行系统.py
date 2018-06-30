@@ -90,7 +90,6 @@ class Atm:
         if object1!=False:
             print("余额为:",object1.card.yu)
 
-        pass
     def cunkuan(self):
         object1 = self.public()
         if object1 != False:
